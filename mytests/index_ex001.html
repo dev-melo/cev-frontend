@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando conhecimento</title>
+    <link rel="shortcut icon" href="../img/black-ops-1-100.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Relembrando as tags usadas até o momento.</h1>
+    <hr>
+    <h2>Paragrafos e quebras de linha</h2>
+    <p>para usar paragrados é necessario usar a tag &lt;p&gt; e &lt;/p&gt;</p>
+    <p>A tag &lt;br&gt; é usada quando se quer quebrar uma linha, esse texto está na mesma <br> ... ops não está!</p>
+
+    <hr>
+    <h2>&lt;hr&gt; para criar uma divisão conforme acima e abaixo dessa frase</h2>
+    <hr>
+    <h2>Usando simbolos e emojis</h2>
+    <p>Simbolos:
+        &euro;
+        &dollar;
+        &yen;
+        &reg;
+        &jcy;
+    </p>
+    <p>Emojis:
+        &#x1F7E3
+        &#x1F713
+    </p>
+    <br>
+    <h2>Imagens</h2>
+    <p>Usando imanges no HTML usando a tag &lt;img src="endereço_da_imagem"&gt;
+        <br>
+        <img src="../img/logo-html5-200.png" alt="Html 5">
+    </p>
+    <hr>
+    <h2>Adicionando um Favicon no projeto</h2>
+    <p>Para colocar um Icone na aba do navegador no cliente, é necessario colocar entro da tag &lt;head&gt, usando a tag &lt;link ... "configurações" &gt;</p>
+    <hr>
+    <h2>Aprendendo como usar h1, h2, h3, h4, h5, h6</h2>
+    <h1>Titulo principal</h1>
+    <h2>Sub Titulo de h1</h2>
+    <h3>Sub de h2</h3>
+    <h4>Sub de h3</h4>
+    <h5>Sub de h4</h5>
+    <h6>Sub do h5</h6>
+
+    <hr>
+    <h2>HTML5 usa semantica</h2>
+    <p>Trocando por exemplo a tag U pela tag address colocando o endereço, </p>
+    <p>Trocando as tags não semanticas como B e I, por <strong>STRONG</strong> para negrito e <em>EM</em> para italico. Respectivamentes.</p>
+    <p>Também foi ensinado que existes varias tags obsoletas, como BIG, U, B.</p>
+    <p>Que no HTML5 as tags tem significados.</p>
+    <p><mark>mark</mark>, <del>del</del>, <small>small</small>, <ins>ins</ins>, <sub>sub</sub><sup>sup</sup>.</p>
+
+    <hr>
+    <h2>Usando HTML para mostrar código-fonte, citações, abreviaturas, até mesmo usando de trás para frente.</h2>
+    <p>Aqui está um Código-fonte em Java usando apenas a tag CODE: @RestController
+@RequestMapping("/users/{userId}/frases")
+public class UserFraseController {
+
+    private final FraseService fraseService;
+
+    public UserFraseController(FraseService fraseService) {
+        this.fraseService = fraseService;
+    }
+
+    @GetMapping
+    public List<FraseResponseDTO> getByUserId(@PathVariable Long userId){
+        return fraseService.getFrasesByUser(userId);
+    }
+
+}</p>
+
+<p>Aqui esta o mesmo código porem usando antes do CODE a tag PRE</p>
+<pre>
+    <code>
+@RestController
+@RequestMapping("/users/{userId}/frases")
+public class UserFraseController {
+
+    private final FraseService fraseService;
+
+    public UserFraseController(FraseService fraseService) {
+        this.fraseService = fraseService;
+    }
+
+    @GetMapping
+    public List<FraseResponseDTO> getByUserId(@PathVariable Long userId){
+        return fraseService.getFrasesByUser(userId);
+    }
+
+}        
+    </code>
+</pre>
+<p>Usando q para citações simples ou o blockquote para citações completas</p>
+<p><abbr title="Usando Abbr Para Abreviaturas">UAPA</abbr>  achei isso muito legal. </p>
+<p>E por ultimo invertendo palavras, frases, e bla bla bla</p>
+<p><bdo dir="rtl">E por ultimo invertendo palavras, frases, e bla bla bla</bdo></p>
+</body>
+</html>
