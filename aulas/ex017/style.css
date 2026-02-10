@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+
+
+
+body {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+
+    /* 
+    Medidas Absolutas: 
+    cm, mm, in (polegada), px; 
+    pt(ponto), pc(paica) não recomendado para telas;
+    
+
+    Medidas Relativas:
+    em (relativo ao M Maiusculo), ex(altura x), rem (relativo ao root 'que ta configurada no body'), vw(largura da view port), vh(altura da view port), %;
+    */
+
+    font-size: 1em;
+    /* 
+    16px = tamanho padrao
+    10pt = pt é a medida que o word usa
+    16px geralmente 1 em
+    */
+
+}
+
+h1{
+    /*
+    font-family: 'Work sans', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+    */
+
+    /*Usar da forma acima, ou com shorthand font abaixo:*/
+
+    font: italic bolder 3em 'Work sans', sans-serif ;
+    
+}
+
+h2{
+    font:  bolder 2em 'Work sans', sans-serif ;
+}
+
+p {
+    line-height: 1.5;
+}
