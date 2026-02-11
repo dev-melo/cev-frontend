@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(120, 120, 120);
+            padding: 3px;
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            margin-top: 10px;
+
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 0.5px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Links </a>
+            <a href="#">Links </a>
+            <a href="#">Links </a>
+            <a href="#">Links </a>
+            <a href="#">Links </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Notícia sobre Bitcoin</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga ab alias sequi dolores, vel nisi a
+                    esse magni, nobis vitae saepe totam, quibusdam qui dolor placeat quo delectus culpa doloribus.</p>
+                <aside>Autor: dev-melo</aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Programação Java</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, soluta quae. Iste ratione eveniet impedit saepe totam. Ipsam soluta odit quia. Nesciunt sit ab laborum architecto exercitationem accusantium aperiam quasi.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Dev Melo</p>
+    </footer>
+</body>
+
+</html>

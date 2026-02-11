@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha de Linguagem de Programação</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            margin: auto;
+            text-align: center;
+            font-size: 3em;
+            background-color: antiquewhite;
+        }
+
+        h2 {
+            padding: 5px;
+
+            text-align: center;
+            background-color: bisque;
+            font-size: 1.5em;
+        }
+
+        article>h3 {
+            text-decoration: underline;
+        }
+
+        article>p:hover {
+            color: brown;
+        }
+
+        h3 {}
+
+        section {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+           
+
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            border: 2px dashed rgb(77, 76, 76);
+            border-radius: 2cap;
+
+        }
+
+        article > p::before {
+            content: "resumo:";
+            font-size: .67em;
+            color: bisque;
+            outline: 1px solid black;
+            margin-right: 10px;
+            background-color: #333;
+            border-radius: 3px;
+            padding: 2px;
+        }
+
+        article>h2 {
+            text-align: start;
+            background-color: rgb(247, 231, 211);
+        }
+
+        .positive:hover {
+            color: rgb(8, 231, 8);
+        }
+
+        .negative:hover {
+            color: rgb(231, 12, 8);
+        }
+
+        table {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 800px;
+            background-color: rgb(247, 231, 211);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #333;
+            text-align: justify;
+
+        }
+
+        th {
+            background-color: bisque;
+        }
+
+        tr:hover {
+            background-color: aliceblue;
+        }
+
+        .titlex1 {
+            font-size: 2em;
+            border: 1px solid #333;
+
+            padding: 15px;
+
+        }
+        li{
+            list-style: circle;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>X1 Linguagens de Programação</h1>
+        <h2>Java vs Python</h2>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Java</h2>
+                <p>Linguagem orientada a objetos, tipada estaticamente e muito usada em sistemas corporativos e Android.
+                    Compilada para a JVM, roda em praticamente qualquer lugar.
+                    Foco forte em estrutura, desempenho e escalabilidade.</p>
+                <h3 class="positive">Pontos Fortes</h3>
+                <ul>
+                    <li>Performance consistente</li>
+                    <li>Forte tipagem</li>
+                    <li>Ecossistema corporativo gigante</li>
+                </ul>
+                <h3 class="negative">Pontos Fracos</h3>
+                <ul>
+                    <li>Verbosidade</li>
+                    <li>Curva de aprendizado maior</li>
+                    <li>Código mais burocrático</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Python</h2>
+                <p>Linguagem interpretada, dinâmica e focada em simplicidade.
+                    Muito usada em automação, dados, IA e scripts rápidos.
+                    Prioriza legibilidade e produtividade.</p>
+                <h3 class="positive">Pontos Fortes</h3>
+                <ul>
+                    <li>Sintaxe simples</li>
+                    <li>Alta produtividade</li>
+                    <li>Forte em IA e Data Science</li>
+                </ul>
+                <h3 class="negative">Pontos Fracos</h3>
+                <ul>
+                    <li>Performance inferior ao Java</li>
+                    <li>Tipagem dinâmica pode causar erros</li>
+                    <li>Gestão de dependências pode virar caos</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2 class="titlex1">É a hora do X1</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Vencedor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Performance</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Facilidade inicial</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>Mercado Corporativo</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>IA / Machine Learning</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>Verbosidade</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>Estrutura e Robustez</td>
+                        <td>Java</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
