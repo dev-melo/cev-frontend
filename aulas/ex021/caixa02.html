@@ -11,53 +11,83 @@
             background-color: dimgray;
         }
 
+        h1 {
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.388);
+            padding: 10px;
+        }
+
         header {
             background-color: white;
             padding: 10px;
             margin: 10px;
         }
 
-        nav{
+        nav {
             background-color: rgb(120, 120, 120);
             padding: 3px;
-            
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.388);
+
         }
 
-        nav > a {
+        nav>a {
             text-decoration: none;
             color: white;
             font-weight: bold;
             margin: 30px;
+
         }
 
-        nav > a:hover {
+        nav>a:hover {
             text-decoration: underline;
         }
 
-        article{
+        article {
             background-color: lightgray;
             padding: 5px;
             margin-top: 10px;
+            border-radius: 10px;
 
         }
 
-        article > aside {
+        article>aside {
             background-color: rgb(165, 165, 165);
 
         }
 
-        main{
+        main {
             background-color: white;
             padding: 10px;
             margin: 10px;
+            border-radius: 10px;
         }
 
-        footer{
+        footer {
             background-color: black;
             color: white;
             text-align: center;
-            padding: 0.5px;
+            padding: 4px;
             margin: 0px;
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+        div#bola{
+            background-color: #fff;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            margin: auto;
+            margin-top: 10px;
+
+            
+        }
+        div#bola:hover{
+            background-color: aqua;
+        }
+        
+        div#bola::after{
+            content: 'BOLA';
         }
     </style>
 </head>
@@ -86,7 +116,9 @@
         <section id="noticias">
             <article>
                 <h2>Programação Java</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, soluta quae. Iste ratione eveniet impedit saepe totam. Ipsam soluta odit quia. Nesciunt sit ab laborum architecto exercitationem accusantium aperiam quasi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, soluta quae. Iste ratione eveniet
+                    impedit saepe totam. Ipsam soluta odit quia. Nesciunt sit ab laborum architecto exercitationem
+                    accusantium aperiam quasi.</p>
             </article>
         </section>
     </main>
@@ -94,6 +126,8 @@
     <footer>
         <p>Desenvolvido por Dev Melo</p>
     </footer>
+
+    <div id="bola"></div>
 </body>
 
 </html>
