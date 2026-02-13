@@ -1,6 +1,15 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 /*
 Cores:
     Degrade do header: 
@@ -22,10 +31,11 @@ Cores:
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
 }
 
 header {
-    background-image: linear-gradient(to bottom, #3CD983 , #1A5C38);
+    background-image: linear-gradient(to bottom, #3CD983, #1A5C38);
     height: 180px;
     position: relative;
 }
@@ -54,11 +64,11 @@ header>nav {
     bottom: 5%;
     left: 0;
     width: 100%;
- 
+
 
 }
 
-nav > a {
+nav>a {
     color: #3CD983;
     text-decoration: none;
     padding: 8px;
@@ -66,12 +76,70 @@ nav > a {
     transition: 1s ease;
 }
 
-nav > a:hover{
+nav>a:hover {
     color: black;
     background-color: #3cd9838e;
     border-radius: 4px;
     transform: scale(1.5);
     transition: 1s ease;
-   
+
+
+}
+
+main{
+    background-color: #84E1AD;
+    padding: 0px 0px 15px 0px;
+}
+
+section{
+    margin: auto;
+    width: 800px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.307);
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+}
+
+article{
     
+}
+
+h1 {
+    font-family: 'idroid';
+    color: #276443;
+}
+
+h2 {
+    font-family: 'idroid';
+    color: #276443;
+    background-image: linear-gradient(to right, #3cd98353, white);
+}
+
+a {
+    color: #276443;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p > a::after  {
+    content: '\00A0\1F517';
+
+}
+
+.destaque_simples{
+    color: #276443; 
+    font-weight: bold;
+}
+
+
+footer {
+    
+    background-color: #1A5C38;
+    text-align: center;
+    color: #3CD983;
+}
+
+footer>p>a {
+    color: white;
+    text-decoration: none;
 }
