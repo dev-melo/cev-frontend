@@ -86,23 +86,41 @@ nav>a:hover {
 
 }
 
-main{
+main {
     background-color: #84E1AD;
     padding: 0px 0px 15px 0px;
 }
 
-section{
+section {
     margin: auto;
-    width: 800px;
+    max-width: 800px; 
+    width: 100%;
     background-color: white;
     box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.307);
     border-radius: 0px 0px 10px 10px;
     padding: 20px;
 }
 
-article{
-    
+div#video {
+    padding: 20px;
+    margin: auto;
+    background-color: #1A5C38;
+    aspect-ratio: 16 / 9;
+
+
 }
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 560px;
+    height: 100%;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.307);
+
+}
+
+article {}
 
 h1 {
     font-family: 'idroid';
@@ -110,36 +128,87 @@ h1 {
 }
 
 h2 {
+    padding: 1px;
     font-family: 'idroid';
     color: #276443;
     background-image: linear-gradient(to right, #3cd98353, white);
 }
 
+picture>img {
+    display: block;
+    margin: auto;
+}
+
 a {
+
     color: #276443;
     text-decoration: none;
     font-weight: bold;
 }
 
-p > a::after  {
+p {
+    margin: 10px auto;
+    text-indent: 40px;
+}
+
+
+p>a::after {
     content: '\00A0\1F517';
 
 }
 
-.destaque_simples{
-    color: #276443; 
+.destaque_simples {
+    color: #276443;
     font-weight: bold;
 }
 
+article#extra{
+    overflow: hidden;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.378);
+    background-color: #84e1ac7a;
+}
+article#extra > h2 {
+    color: white;
+    background-color: #1A5C38;
+    background-image: linear-gradient(to left, #1A5C38, #30aa67);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    padding: 10px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.307);
+}
+article#extra > p {
+    margin: 10px;
+}
+article#extra > ul {
+    padding: 10px;
+    column-count: 2;
+    list-style-position: inside;
+    list-style: none;
 
+}
+li{
+    text-decoration: underline;
+
+}
+li::before{
+    content: '\2714  ';
+}
 footer {
-    
+
     background-color: #1A5C38;
     text-align: center;
     color: #3CD983;
+    
 }
 
 footer>p>a {
     color: white;
     text-decoration: none;
+}
+
+footer>p{
+    margin: 0;
 }
