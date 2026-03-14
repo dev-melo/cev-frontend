@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+
+        }
+
+        section{
+            text-align: center;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            width: 91vw;
+        }
+
+        h1{
+            padding: 10px;
+            margin: 10px;
+        }
+        ul{
+            text-align: left;
+        }
+        li{
+            margin: 10px;
+            list-style-type: none;
+        }
+        p{
+            margin: 5px;
+        }
+        iframe{
+            width: 100%;
+            height: 490px;
+            padding: 2px;
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(115, 112, 112);
+        }
+        a:hover{
+            color: black;
+        }
+    </style>
+
+</head>
+<body><section>
+    
+        <h1>Aprendendo usar iframes</h1>
+        
+        <p>Aproveitando que estou aprendendo sobre iframe eu vou usar aqui o target para um ifram com alguns de meus projetos. </p>
+    
+        <ul>
+            <li><a href="../desafios/005/index.html" target="frame">Projeto 1: Uma pagina de perfil.</a></li>
+            <li><a href="../desafios/010/index.html" target="frame">Projeto 2: Origem do Marcote do Android</a></li>
+            <li><a href="../desafios/012/index.html" target="frame">Projeto 3: Projeto Cordel</a></li>
+            <li><a href="../desafios/013/desafio-1-e-2.html" target="frame">Projeto 4: Mesclando Tabelas</a></li>
+        </ul>
+    
+        <iframe name="frame" frameborder="1" srcdoc="<h1>Escolha uma das opções acima</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem totam porro vitae reprehenderit quidem numquam quam sapiente iusto odio dolore magnam neque sequi eos labore, soluta ex voluptatum recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quo adipisci in sint optio cum, cupiditate odio aut, molestiae necessitatibus, commodi est! Vel tempore aliquam iure delectus earum libero ex!</p> <img src='../img/create/borda.png' >">
+
+            
+            
+        </iframe>
+    
+        <p>Agora eu posso colocar alguns dos meus pequenos projetos na mesma pagina, sem perder a navegação.</p>
+</section>
+</body>
+</html>
