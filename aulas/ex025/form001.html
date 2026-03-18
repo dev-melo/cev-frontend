@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1>Meu Primeiro Formulario</h1>
+    <form autocomplete="off" action="cadastro.php" method="post">
+        <p>
+            <label for="iNome">Nome:</label> <input type="text" name="nome" id="iNome" >
+        </p>
+        <p>
+            <label for="iSobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="iSobrenome">
+        </p>
+        <p><label for="iSenha">Senha: <input type="password" name="senha" id="iSenha"></label></p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+
+</body>
+
+</html>
