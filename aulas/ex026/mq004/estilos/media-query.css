@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/*Todas demais Medias*/
+/*Typical Device BreakPoints
+pequenas telas: ate 600px
+celular: 600px ate 768px
+tablet: 768px ate 992px
+desktop: 992px ate 1200px
+grandes telas: acima 1200px
+
+
+*/
+@media print {
+
+    /*Impressora*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+    body {
+        background-image: url("../../img/back-print.jpg");
+
+
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main h1 {
+
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+    main::after {
+        content: "Impresso usando media queries";
+
+    }
+}
+
+/* Como o site já foi feito pensando em mobile first não tem @media para eles aqui*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /*Tablet*/
+    body {
+        background-image: url("../../img/back-tablet.jpg");
+
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    /*PC*/
+
+    body {
+        background-image: url("../../img/back-pc.jpg");
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+
+    body {
+        background-image: url("../../img/back-tv.jpg");
+    }
+
+    /*TV*/
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+}
