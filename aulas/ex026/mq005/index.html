@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
@@ -57,6 +57,14 @@
             iMenu.style.display == 'block'
                 ? iMenu.style.display = 'none'
                 : iMenu.style.display = 'block';
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                iMenu.style.display = 'block'
+            } else {
+                iMenu.style.display = 'none'
+            }
         }
     </script>
 </body>
