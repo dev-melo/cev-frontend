@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+
+</head>
+
+<body>
+    <h1>Output</h1>
+    <form>
+        <p><label for="iIdade">Sua Idade: </label> <output id="res">0</output> até o final do ano.</p>
+        <p><label for="iAno">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iAno" min="1900" max="2026" value="2020"
+                oninput="res.innerHTML = Number(new Date().getFullYear() - iAno.value)">
+        </p>
+
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+
+</body>
+
+</html>
