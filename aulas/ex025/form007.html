@@ -9,10 +9,47 @@
 
 <body>
     <h1>Não usam input</h1>
-    <fieldset>
-        <legend>Tipos</legend>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>SELECT</legend>
+            <label for="iUF">Estado:</label>
+            <select name="UF" id="iUF">
+                <optgroup label="Região Sudeste">
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernanbuco</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <!---->
+        <fieldset>
+            <legend>DataList</legend>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option value="DEV">Programador</option>
+                <option value="CONT">Contador</option>
+                <option value="SUP">Suporte</option>
+            </datalist>
+        </fieldset>
+        <!---->
+        <fieldset>
+            <legend>Textarea</legend>
+            <textarea name="texto" id="itexto">Escreve ai:</textarea>
+        </fieldset>
 
-    </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 
 </html>
