@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+
+        div#F {
+         flex: 0 0 100px;   
+        }
+
+        div#G {
+           flex: 1 0 240px;
+        }
+
+        div#I {
+            flex: 0 0 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item" id="F">
+            <ul>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+            </ul>
+        </div>
+        <div class="item" id="G">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quas a fugit. Optio provident in natus quis, id sint officia. Dolore, id alias. Illum, amet repudiandae veritatis architecto minus recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam molestiae saepe porro perspiciatis numquam at? Aliquid qui aspernatur deleniti, quam repellat, veniam at molestias possimus labore magni rerum quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo voluptatem ipsa necessitatibus minima commodi dolor atque rem cumque! Quia id eveniet error velit doloribus quos reiciendis accusamus unde exercitationem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci ipsa deleniti aspernatur doloremque suscipit earum illum, in blanditiis eum sit, dolor obcaecati officia incidunt. Veniam eum dolore debitis pariatur et?</div>
+        <div class="item" id="I">IIIIIIII</div>
+    </div>
+</body>
+
+</html>
