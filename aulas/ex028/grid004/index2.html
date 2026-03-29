@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template: repeat(3, 100px) / repeat(4, 1fr);
+            border: 1px solid green;
+
+        }
+
+        div.container > div {
+            place-items: center center;
+        }
+
+        .cx1 {
+            background-color: lightcoral;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: -1;
+            text-align: center;
+        }
+
+        .cx2 {
+            background-color: lightgreen;
+
+            grid-row-start: 2;
+            grid-row-end: -1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .cx3 {
+            background-color: lightseagreen;
+
+            grid-row-start: 2;
+            grid-row-end: -1;
+            grid-column-start: 3;
+            grid-column-end: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cx1">CAIXA 1</div>
+        <div class="cx2">CAIXA 2</div>
+        <div class="cx3">CAIXA 3</div>
+
+    </div>
+</body>
+
+</html>
