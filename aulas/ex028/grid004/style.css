@@ -3,8 +3,14 @@
 
 .container {
     display: grid;
-    grid-template-rows: repeat(3, 100px);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:100px  repeat(2, 200px);
+    grid-template-columns: repeat(7, 1fr);
+    
+    gap: 5px;
+}
+
+div{
+    padding: 10px;
 }
 
 .cx1 {
@@ -12,7 +18,8 @@
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: -1;
+    
 }
 
 .cx2 {
@@ -20,13 +27,21 @@
     grid-row-start: 2;
     grid-row-end: -1;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
 }
 
 .cx3 {
     background-color: lightskyblue;
     grid-row-start: 2;
     grid-row-end: -1;
-    grid-column-start: 3;
+    grid-column-start: 2;
+    grid-column-end: -2;
+}
+
+.cx4{
+    background-color: lightslategray;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: -2;
     grid-column-end: -1;
 }
